@@ -1,0 +1,46 @@
+About Israel Ibok — Xpectra Systems
+
+Israel Ibok is a software engineer, AI systems builder, and founder of Xpectra Systems, based in Lagos, Nigeria. He holds a First Class degree in Electrical and Electronics Engineering — a foundation that shapes how he thinks about every system he touches.
+
+Academic background:
+
+Israel studied Electrical and Electronics Engineering and graduated with First Class Honours. The discipline gave him a rigorous way of thinking about systems: signals, feedback loops, control theory, how components interact under load, and how failure propagates. He carries that mental model into software. When he looks at a distributed AI system, he sees it the way an engineer sees a circuit — inputs, state, outputs, failure modes, and the points where the system can be made more reliable.
+
+His long-term focus is bridging AI and industrial infrastructure. He believes the most consequential work in AI right now is not consumer apps — it is connecting intelligent systems to the physical world: manufacturing, logistics, energy, telecoms. That is where his engineering background and his AI work converge.
+
+About Xpectra Systems:
+
+Xpectra Systems is Israel's independent AI and software consultancy. The name reflects his orientation — systems thinking, precision, and measurement. The firm focuses on building practical automation and intelligent systems for businesses, with a bias toward enterprise workflows, operational data, and production-grade reliability over demos that never ship.
+
+Technical experience:
+
+Israel works primarily in Python. His AI stack includes LangChain, LangGraph, OpenAI and Anthropic APIs, and vector databases including ChromaDB, Qdrant, and Pinecone. For workflow automation he uses n8n. For backend services, FastAPI and PostgreSQL. He understands embeddings, chunking strategies, retrieval ranking, hallucination mitigation, and how to structure agentic systems that handle real-world edge cases — not just happy paths.
+
+His recent work includes:
+
+- Building a multi-agent AI OS in Claude Code for Xpectra's own client operations — routes tasks across specialized agents for proposal writing, follow-up management, pipeline tracking, and interview coaching. It runs in production every day.
+- Building the Agentic RAG system you are interacting with right now — LangGraph state machine with route decision, document retrieval, relevance grading, query rewriting, answer generation, and hallucination grading before final response.
+- Designing Dwarf Logistics, a freight and delivery automation system built to streamline operations for logistics companies in West Africa.
+
+Why industrial infrastructure and AI:
+
+Israel's Electrical Engineering training made him think in systems long before he wrote his first line of Python. The gap he sees — and wants to close — is between AI's current strength (language, reasoning, pattern recognition) and industrial operations (physical processes, real-time control, legacy infrastructure). Enterprise workflow platforms like Plasma's C2M are part of that bridge. So are SCADA integrations, IoT sensor pipelines, predictive maintenance models, and intelligent process automation in sectors like telecoms, manufacturing, and energy. He is not pursuing this as a trend. It is the natural direction of his background.
+
+Working style:
+
+Israel is practical before he is theoretical. He reads the system before he changes it. He does not over-engineer for hypothetical future requirements — he ships the simplest working solution and improves it when the need is real. He communicates clearly, asks focused questions when something is ambiguous, and does not disappear when things get hard.
+
+He is calm in technical conversations and does not perform expertise he does not have. If he does not know something, he says so and explains how he would find out. He has found that honesty in those moments builds more trust than bluffing.
+
+Personal:
+
+Israel is based in Lagos, Nigeria. He works West Africa time (UTC+1) but is comfortable overlapping with US Central Time (UTC-5) — a 6-hour difference, manageable with a consistent schedule. He is direct, focused, and genuinely interested in the work. He values clear expectations and honest feedback.
+
+He is talking to Plasma Computing Group because enterprise workflow automation — BPMN, state machines, decision gateways — maps directly to how he thinks about agentic systems. He sees the LangGraph-to-BPMN bridge as a real engineering problem worth solving, and he wants to be the person who builds it.
+
+Goals:
+
+Israel's goal is to grow Xpectra Systems into a serious AI engineering firm by doing a small number of high-quality engagements with clients who have hard problems. The Plasma opportunity fits that exactly. He is not interested in easy work. He is interested in systems that matter.
+
+LinkedIn: linkedin.com/in/israel-ibok
+Contact: ibokisrael@gmail.com

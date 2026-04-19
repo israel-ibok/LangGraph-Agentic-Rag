@@ -1,0 +1,28 @@
+Plasma Computing Group is an enterprise technology company founded in 2003, headquartered in Irving, Texas, United States. The company employs between 51 and 200 people and serves enterprise clients in telecom, manufacturing, oil and gas, and related industries.
+
+Core Product: C2M Workflow
+Plasma's flagship product is C2M Workflow, a business process automation platform that converts manual and rigid processes into automated and agile workflows. The platform uses cognitive technologies and AI to create intelligent workflows that learn and evolve to provide optimized control at reduced cost.
+
+C2M Workflow covers multiple enterprise domains including Customer Engagement, CRM, Sales Pipeline Management, Quote to Cash, Vendor Management, Project Management, and Field Service Management.
+
+Generative AI Platform
+Plasma has built a GenAI platform designed for IT and OT networks. Key capabilities include:
+
+Retrieval Augmented Generation for rapid extraction of data from tables, text, images, and graphics. This enables faster query resolution by grounding AI responses in organizational knowledge bases.
+
+GenAI Knowledge Management System (KMS): A platform utilizing advanced generative AI technologies to power a knowledge management ecosystem. It delivers the ability to fully capitalize on organizational knowledge through intelligent query and response capabilities.
+
+Network issue resolution: The GenAI platform resolves network issues in minutes rather than hours or days by using AI to diagnose problems and suggest solutions based on historical data patterns.
+
+Predictive analytics: AI models analyzing historical operational data to forecast network performance and identify issues before they occur.
+
+Proactive cybersecurity: GenAI-enabled network security that provides predictive insights based on dynamic analysis of network behavior.
+
+Technology Foundation
+Plasma's technology stack includes artificial intelligence, machine learning, natural language processing, IoT integration (AIoT), and Business Intelligence. The company has built workflow automation using Angular on the frontend and .NET Core on the backend. They have recently built a BPMN-based Workflow Builder tool using BPMN.js.
+
+Target Markets
+Telecom operators requiring network intelligence and issue resolution. Manufacturing companies needing predictive asset performance management. Oil and gas companies requiring field service management and asset monitoring. Enterprise organizations seeking business process automation with AI-driven decision making.
+
+Company History
+Plasma Computing Group was founded in 2003 by Yasser Khan, who has been recognized as a business leader in Dallas-Fort Worth. The company has grown to serve enterprise clients internationally and has posted over 123 jobs on Upwork with 82 hires and a 55 percent hire rate, demonstrating consistent investment in remote technical talent. The company has spent $1.8 million on Upwork talent over its membership, including engagements of over 5000 hours with individual contractors.

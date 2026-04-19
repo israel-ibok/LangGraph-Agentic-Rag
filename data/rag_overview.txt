@@ -1,0 +1,32 @@
+Retrieval Augmented Generation (RAG) is a technique for grounding large language model outputs in retrieved documents rather than relying on the model's training data alone. It solves the hallucination problem by giving the model specific, current, domain-relevant context to answer from.
+
+The RAG pipeline has six stages:
+
+1. Document Loading: Raw documents are loaded from their source. Sources include PDFs, text files, web pages, databases, and APIs. LangChain provides DocumentLoaders for each source type.
+
+2. Text Splitting: Documents are split into chunks. Chunk size is typically 500 to 1000 tokens with 100 to 200 token overlap between chunks. Overlap is important because it preserves context at chunk boundaries. A sentence that spans the end of one chunk and the start of another is captured in both, preventing loss of meaning.
+
+3. Embedding: Each chunk is converted into a vector embedding using an embedding model. OpenAI text-embedding-3-small is commonly used. The embedding represents the semantic meaning of the chunk as a high-dimensional vector. Chunks with similar meaning will have vectors that are close together in the embedding space.
+
+4. Vector Store: Embedded chunks are stored in a vector database. Options include ChromaDB for local development, Qdrant for self-hosted production, and Pinecone for managed cloud. The vector store enables fast similarity search across millions of chunks.
+
+5. Retrieval: At query time, the user question is embedded with the same model. A similarity search finds the top K chunks whose vectors are closest to the question vector. K is typically 4. These chunks represent the most semantically relevant context for the question.
+
+6. Generation: Retrieved chunks are inserted into a prompt template alongside the user question. The language model generates an answer grounded in the retrieved context. The system prompt should explicitly instruct the model to answer only from the provided context and say it does not know if the answer is not present.
+
+Common failure modes and fixes:
+
+Irrelevant retrieval: The retrieved chunks do not match the question. Fix with hybrid search combining semantic similarity and BM25 keyword search, or add a grading node that checks relevance before generation.
+
+Context overflow: Too many chunks exceed the model context window. Fix with reranking using a cross-encoder model to score and drop low-relevance chunks before sending to the LLM.
+
+Hallucination: The model generates claims not supported by the retrieved context. Fix with a grounding instruction in the system prompt and a post-generation hallucination grading node.
+
+Query ambiguity: The user question is unclear and retrieves poor results. Fix with query rewriting or multi-query retrieval that generates multiple variants of the question.
+
+Vector databases comparison:
+- ChromaDB: Open source, runs locally, best for development and demos, no external service needed
+- Qdrant: Open source, can be self-hosted or cloud, best for enterprise clients requiring data sovereignty, supports payload filtering and hybrid search natively
+- Pinecone: Managed cloud service, fast setup, namespace-based multi-tenancy, best for teams that want zero infrastructure overhead
+
+Qdrant is preferred for enterprise clients in telecom, manufacturing, and oil and gas because these industries often have data governance requirements that prevent sending operational data to third-party cloud services.

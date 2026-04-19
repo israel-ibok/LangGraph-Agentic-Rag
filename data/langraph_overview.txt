@@ -1,0 +1,19 @@
+LangGraph is a framework for building stateful, multi-actor applications with LLMs, built on top of LangChain. It extends LangChain with a graph-based execution model where nodes represent computation steps and edges represent control flow between steps.
+
+Key features of LangGraph:
+
+State Management: LangGraph uses a TypedDict-based state schema that flows through the entire graph. Every node receives the full state and returns updates to it. This makes every transition auditable and debuggable.
+
+Cycles and Loops: Unlike basic LangChain chains which are linear, LangGraph supports cycles. This means an agent can loop back to retry a step, rewrite a query, or re-attempt generation when the first result is unsatisfactory.
+
+Checkpointing: LangGraph supports saving state at any node using checkpointers (MemorySaver for in-memory, SqliteSaver for persistent). This makes workflows resumable after crashes, timeouts, or human approval steps.
+
+Human-in-the-Loop: Using interrupt_before or interrupt_after, a LangGraph workflow can pause execution at any node, surface the current state to a human reviewer, wait for their input, and then resume. This is critical for enterprise workflows requiring approval gates.
+
+Conditional Routing: Conditional edges allow dynamic routing based on the current state. A routing function looks at the state and returns the name of the next node to execute. This is how branching logic works in agentic workflows.
+
+Plan Act Observe Respond Pattern: LangGraph naturally implements the PLAN ACT OBSERVE RESPOND loop that defines agentic AI systems. Planning nodes decide what to do next. Action nodes execute tasks like retrieval or API calls. Observation nodes grade the results. Response nodes synthesize the final output.
+
+Use cases: Multi-step RAG pipelines with quality grading, enterprise workflow automation with approval gates, autonomous agents that iterate until a goal is achieved, and any workflow where state must be tracked and transitions must be explicit.
+
+LangGraph is preferred over plain LangChain agents for production systems because every state transition is visible, the workflow is resumable, and human intervention can be inserted at any point without redesigning the system.
